@@ -19,47 +19,68 @@
     ></script>
   </head>
   <body data-bs-theme="dark">
-    <nav id="the-navbar" class="navbar bg-body-tertiary px-3 mb-5 fixed-top">
+    <nav
+      id="the-navbar"
+      class="navbar navbar-expand-md bg-body-tertiary px-3 mb-5 fixed-top"
+    >
       <a class="navbar-brand" href="#">
         <img
           src="assets/favicon_io/android-chrome-192x192.png"
           alt="TW letters logo"
           width="32"
           height="32"
-          class=""
         />
-        <span class="fw-bold fst-italic m-1">Tanner Weber</span></a
+        <span class="fw-bold fst-italic d-none d-sm-inline"
+          >Tanner Weber</span
+        ></a
       >
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#previousWork">Previous Work</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-      <div>
-        <button id="dark-light-button" class="btn btn-secondary">
-          Color Mode
-        </button>
-        <a
-          class="btn btn-secondary"
-          href="https://github.com/tannerweber/tannerweber.github.io"
-          >Code</a
-        >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapsing"
+        aria-label="navbar toggler"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-between"
+        id="navbarCollapsing"
+      >
+        <ul class="nav nav-underline" role="navigation">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#previousWork">Previous Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="mt-1">
+          <button id="dark-light-button" class="btn btn-primary rounded-5 me-1">
+            Color Mode
+          </button>
+          <a
+            class="btn btn-primary rounded-5"
+            href="https://github.com/tannerweber/tannerweber.github.io"
+            >Code</a
+          >
+        </div>
       </div>
     </nav>
     <main
       class="container"
       role="main"
-      style="max-width: 700px; margin-top: 75px"
+      style="max-width: 800px; margin-top: 75px"
     >
+      <h1 class="mb-3 text-center fw-light font-monospace">
+        Tanner Weber's Personal Website
+      </h1>
       <div
         data-bs-spy="scroll"
         data-bs-target="#the-navbar"
