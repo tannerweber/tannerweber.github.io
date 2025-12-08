@@ -12,6 +12,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles.css" />
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
@@ -121,12 +122,127 @@
         <div id="projects" class="card bg-body-tertiary rounded-4 mb-3">
           <h2 class="card-header fw-bold bg-primary">Projects</h2>
           <div class="card-body p-4">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
-              vero, praesentium illo consequuntur minus officia error illum
-              repellendus quos ipsam quibusdam, fugiat suscipit recusandae
-              officiis? Tempore hic ex ea? A.
-            </p>
+            <p>These are some projects.</p>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#accordian-collapseOne"
+                    aria-expanded="true"
+                    aria-controls="accordian-collapseOne"
+                  >
+                    Chocoholics Anonymous
+                  </button>
+                </h2>
+                <div
+                  id="accordian-collapseOne"
+                  class="accordion-collapse collapse show"
+                >
+                  <div class="accordion-body">
+                    <a
+                      class="repository-link"
+                      href="https://github.com/tannerweber/chocanon"
+                      target="_blank"
+                      >Repository</a
+                    >
+                    <br />
+                    <br />
+                    <p>
+                      This project uses an sqlite database in rust to generate
+                      files. Various operations can be performed on the data to
+                      produce different kinds of file taking the form of emails.
+                      The
+                      <a
+                        href="https://github.com/rusqlite/rusqlite"
+                        target="_blank"
+                        >Rusqlite</a
+                      >
+                      crate is used for sqlite.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#accordian-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="accordian-collapseTwo"
+                  >
+                    Dotfiles
+                  </button>
+                </h2>
+                <div
+                  id="accordian-collapseTwo"
+                  class="accordion-collapse collapse"
+                >
+                  <div class="accordion-body">
+                    <a
+                      class="repository-link"
+                      href="https://gitlab.cecs.pdx.edu/tannerw/dot-files"
+                      target="_blank"
+                      >Repository</a
+                    >
+                    <br />
+                    <br />
+                    <p>
+                      These are my dotfiles for NeoVim, Tmux, Wezterm, Niri,
+                      Waybar, Fish, and more.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#accordian-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="accordian-collapseThree"
+                  >
+                    Book
+                  </button>
+                </h2>
+                <div
+                  id="accordian-collapseThree"
+                  class="accordion-collapse collapse"
+                >
+                  <div class="accordion-body">
+                    <a
+                      class="repository-link"
+                      href="https://www.amazon.com/Rise-Technology-Manufactured-Utopia/dp/B0D63WCR1M"
+                      target="_blank"
+                      >Website</a
+                    >
+                    <br />
+                    <br />
+                    <img
+                      src="https://m.media-amazon.com/images/I/61E1Reim70L._SY466_.jpg"
+                      height="365"
+                      width="240"
+                      alt="book cover"
+                    />
+                    <img
+                      src="https://m.media-amazon.com/images/I/51ThtoNz1jL._SY466_.jpg"
+                      height="365"
+                      width="240"
+                      alt="book back"
+                    />
+                    <br />
+                    <br />
+                    <p>This is a book I contributed to with other students.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div id="contact" class="card bg-body-tertiary rounded-4 mb-3">

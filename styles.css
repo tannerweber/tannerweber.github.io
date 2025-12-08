@@ -1,0 +1,13 @@
+:root {
+  --link-button-color: rgb(8, 135, 43);
+}
+
+.repository-link {
+  color: white;
+  background-color: var(--link-button-color);
+  text-underline-offset: 4px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+}
