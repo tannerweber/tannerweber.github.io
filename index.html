@@ -285,12 +285,109 @@
         <div id="contact" class="card bg-body-tertiary rounded-4 mb-3">
           <h2 class="card-header fw-bold bg-primary text-white">Contact</h2>
           <div class="card-body p-4 pb-5">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
-              vero, praesentium illo consequuntur minus officia error illum
-              repellendus quos ipsam quibusdam, fugiat suscipit recusandae
-              officiis? Tempore hic ex ea? A.
-            </p>
+            <p>Contact Me</p>
+            <button
+              type="button"
+              class="btn btn-primary text-decoration-underline"
+              data-bs-toggle="modal"
+              data-bs-target="#contact-modal"
+            >
+              Fill out the contact form
+            </button>
+          </div>
+          <div class="modal" id="contact-modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-primary">
+                  <h3 class="modal-title fw-bold text-white">Contact Form</h3>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form action="/submit">
+                    <h3>Fill out the form to contact.</h3>
+                    <div class="mb-3">
+                      <label for="firstName">First Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="firstName"
+                        id="firstName"
+                        placeholder="first"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="lastName">Last Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="lastName"
+                        id="lastName"
+                        placeholder="last"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="emailAddress">Email address</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="emailAddress"
+                        id="emailAddress"
+                        placeholder="email@example.com"
+                        required
+                      />
+                    </div>
+                    <fieldset class="mb-3">
+                      <legend for="studentSelect">Are you a student?</legend>
+                      <div>
+                        <input
+                          type="radio"
+                          name="personRole"
+                          id="psuStudent"
+                          value="psuStudent"
+                        />
+                        <label for="psuStudent">Psu Student</label>
+                      </div>
+                      <div>
+                        <input
+                          type="radio"
+                          name="personRole"
+                          id="otherStudent"
+                          value="otherStudent"
+                        />
+                        <label for="otherStudent"
+                          >Other University Student</label
+                        >
+                      </div>
+                      <div>
+                        <input
+                          type="radio"
+                          name="personRole"
+                          id="other"
+                          value="other"
+                        />
+                        <label for="other">Other</label>
+                      </div>
+                    </fieldset>
+                    <button
+                      type="submit"
+                      value="Submit"
+                      class="btn btn-primary"
+                    >
+                      Submit
+                    </button>
+                    <button type="reset" value="Reset" class="btn btn-info">
+                      Reset
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
