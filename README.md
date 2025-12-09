@@ -1,6 +1,6 @@
-# tannerweber.github.io
+# [tannerweber.github.io](https://tannerweber.github.io)
 
-This is a personal website project.
+This is a personal website project. [The deployed website](https://tannerweber.github.io).
 
 # ✨ Features
 
